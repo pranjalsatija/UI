@@ -6,8 +6,6 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
-
-
 @IBDesignable
 open class RoundButton: Button {
     @IBInspectable open var roundsSuperview: Bool = false {

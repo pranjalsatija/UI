@@ -7,35 +7,48 @@
 //
 
 public class DataSource: NSObject {
-    public var sections: [Section] {
+    private var views = [UIView]() {
         didSet {
-
+            tableView?.reloadData()
         }
     }
 
-    public init(sections: [Section]) {
-        self.sections = sections
+    weak private var tableView: UITableView?
+
+    public init(_ views: [UIView]) {
+        self.views = views
     }
 }
 
 extension DataSource {
+    public func append(_ view: UIView) {
+        views.append(view)
+    }
+
+    public func insert(_ view: UIView, at index: Int) {
+        views.insert(view, at: index)
+    }
+
     public func bind(to tableView: UITableView) {
+        self.tableView = tableView
+
+        tableView.allowsSelection = false
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.tableFooterView = UIView(frame: .zero)
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.reloadData()
     }
 }
 
 extension DataSource: UITableViewDataSource, UITableViewDelegate {
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
-    }
-
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections[section].count
+        return views.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = ContainerCell()
+        cell.view = views[indexPath.row]
+        return cell
     }
 }

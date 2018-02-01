@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF026C6C2020E6C8007AA185 /* DataSourceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF026C6B2020E6C8007AA185 /* DataSourceImageView.swift */; };
+		AF6641732022B8C600BF5215 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6641722022B8C600BF5215 /* TableView.swift */; };
 		AF87E509201D67BC0015CE1C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87E508201D67BC0015CE1C /* DataSource.swift */; };
-		AF95509C201D87CD00A91486 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF95509B201D87CD00A91486 /* Section.swift */; };
-		AF95509E201D87DA00A91486 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF95509D201D87DA00A91486 /* Row.swift */; };
 		AFBEB504201D564A0025D5EF /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBEB4FA201D564A0025D5EF /* UI.framework */; };
 		AFBEB509201D564A0025D5EF /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB508201D564A0025D5EF /* UITests.swift */; };
 		AFBEB50B201D564A0025D5EF /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBEB4FD201D564A0025D5EF /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,6 +21,10 @@
 		AFBEB522201D569E0025D5EF /* UIView+Rounded Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB51B201D569E0025D5EF /* UIView+Rounded Corners.swift */; };
 		AFBEB523201D569E0025D5EF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB51C201D569E0025D5EF /* Card.swift */; };
 		AFBEB525201D570D0025D5EF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB524201D570D0025D5EF /* Colors.swift */; };
+		AFC7AEE9202032F90072566B /* ContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7AEE8202032F90072566B /* ContainerCell.swift */; };
+		AFC7AEEC2020355E0072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEEB2020355E0072566B /* SnapKit.framework */; };
+		AFC7AEF0202036A70072566B /* DataSourceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7AEEF202036A70072566B /* DataSourceButtonView.swift */; };
+		AFC7AEF420203DF70072566B /* DataSourceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7AEF320203DF70072566B /* DataSourceTextView.swift */; };
 		AFF781FD201E8D38004E94B9 /* UIApplication Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF781FC201E8D38004E94B9 /* UIApplication Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF026C6B2020E6C8007AA185 /* DataSourceImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceImageView.swift; sourceTree = "<group>"; };
+		AF6641722022B8C600BF5215 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		AF87E508201D67BC0015CE1C /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		AF95509B201D87CD00A91486 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		AF95509D201D87DA00A91486 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		AFBEB4FA201D564A0025D5EF /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBEB4FD201D564A0025D5EF /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
 		AFBEB4FE201D564A0025D5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +56,10 @@
 		AFBEB51B201D569E0025D5EF /* UIView+Rounded Corners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded Corners.swift"; sourceTree = "<group>"; };
 		AFBEB51C201D569E0025D5EF /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		AFBEB524201D570D0025D5EF /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AFC7AEE8202032F90072566B /* ContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCell.swift; sourceTree = "<group>"; };
+		AFC7AEEB2020355E0072566B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Common Frameworks/SnapKit.framework"; sourceTree = "<group>"; };
+		AFC7AEEF202036A70072566B /* DataSourceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceButtonView.swift; sourceTree = "<group>"; };
+		AFC7AEF320203DF70072566B /* DataSourceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTextView.swift; sourceTree = "<group>"; };
 		AFF781FC201E8D38004E94B9 /* UIApplication Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC7AEEC2020355E0072566B /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				AF87E508201D67BC0015CE1C /* DataSource.swift */,
-				AF95509D201D87DA00A91486 /* Row.swift */,
-				AF95509B201D87CD00A91486 /* Section.swift */,
+				AFC7AEE8202032F90072566B /* ContainerCell.swift */,
+				AFC7AEEF202036A70072566B /* DataSourceButtonView.swift */,
+				AF026C6B2020E6C8007AA185 /* DataSourceImageView.swift */,
+				AFC7AEF320203DF70072566B /* DataSourceTextView.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 				AFBEB514201D56530025D5EF /* Sources */,
 				AFBEB4FC201D564A0025D5EF /* Config */,
 				AFBEB507201D564A0025D5EF /* Tests */,
+				AFC7AEEA2020354B0072566B /* Frameworks */,
 				AFBEB4FB201D564A0025D5EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,11 +143,20 @@
 				AF87E507201D67B10015CE1C /* DataSource */,
 				AFBEB517201D569D0025D5EF /* RaisedVisualEffectView.swift */,
 				AFBEB51A201D569E0025D5EF /* RoundButton.swift */,
+				AF6641722022B8C600BF5215 /* TableView.swift */,
 				AFBEB518201D569D0025D5EF /* TextField.swift */,
 				AFF781FC201E8D38004E94B9 /* UIApplication Extension.swift */,
 				AFBEB51B201D569E0025D5EF /* UIView+Rounded Corners.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		AFC7AEEA2020354B0072566B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC7AEEB2020355E0072566B /* SnapKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,17 +288,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF781FD201E8D38004E94B9 /* UIApplication Extension.swift in Sources */,
+				AF6641732022B8C600BF5215 /* TableView.swift in Sources */,
+				AF026C6C2020E6C8007AA185 /* DataSourceImageView.swift in Sources */,
 				AFBEB51F201D569E0025D5EF /* TextField.swift in Sources */,
 				AFBEB525201D570D0025D5EF /* Colors.swift in Sources */,
 				AFBEB521201D569E0025D5EF /* RoundButton.swift in Sources */,
 				AF87E509201D67BC0015CE1C /* DataSource.swift in Sources */,
 				AFBEB523201D569E0025D5EF /* Card.swift in Sources */,
-				AF95509C201D87CD00A91486 /* Section.swift in Sources */,
-				AF95509E201D87DA00A91486 /* Row.swift in Sources */,
 				AFBEB51D201D569E0025D5EF /* ContainerView.swift in Sources */,
+				AFC7AEF420203DF70072566B /* DataSourceTextView.swift in Sources */,
 				AFBEB51E201D569E0025D5EF /* RaisedVisualEffectView.swift in Sources */,
+				AFC7AEE9202032F90072566B /* ContainerCell.swift in Sources */,
 				AFBEB522201D569E0025D5EF /* UIView+Rounded Corners.swift in Sources */,
 				AFBEB520201D569E0025D5EF /* Button.swift in Sources */,
+				AFC7AEF0202036A70072566B /* DataSourceButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +448,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "../Common\\ Frameworks/**";
 				INFOPLIST_FILE = Config/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -447,6 +472,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "../Common\\ Frameworks/**";
 				INFOPLIST_FILE = Config/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

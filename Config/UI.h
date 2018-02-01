@@ -6,6 +6,7 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
+#import <SnapKit/SnapKit.h>
 #import <UIKit/UIKit.h>
 
 //! Project version number for UI.
