@@ -7,7 +7,8 @@
 //
 
 public class DataSourceButtonView: UIView {
-    private var button: UIButton!
+    public var button: UIButton!
+    
     private var tapHandler: ((DataSourceButtonView) -> Void)!
 }
 

@@ -25,6 +25,14 @@ extension DataSource {
         views.append(view)
     }
 
+    public func insert(_ view: UIView, after otherView: UIView) {
+        for (index, existingView) in views.enumerated() {
+            if existingView == otherView {
+                insert(view, at: index.advanced(by: 1))
+            }
+        }
+    }
+
     public func insert(_ view: UIView, at index: Int) {
         views.insert(view, at: index)
     }

@@ -7,9 +7,10 @@
 //
 
 public class DataSourceTextView: UIView {
-    private var accessoryImageView: UIImageView?
-    private var iconImageView: UIImageView?
-    private var textLabel: UILabel!
+    public var accessoryImageView: UIImageView?
+    public var iconImageView: UIImageView?
+    public var textLabel: UILabel!
+    
     private var tapHandler: ((DataSourceTextView) -> Void)?
 }
 

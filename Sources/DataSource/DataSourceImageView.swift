@@ -7,13 +7,14 @@
 //
 
 public class DataSourceImageView: UIView {
-    private var imageView: UIImageView!
-    private var tapHandler: (() -> Void)?
+    public var imageView: UIImageView!
+    
+    private var tapHandler: ((DataSourceImageView) -> Void)?
 }
 
 public extension DataSourceImageView {
     static func make(image: UIImage, contentMode: UIViewContentMode, maxHeight: CGFloat? = nil, padding: CGFloat = 16,
-                     imageColor: UIColor? = nil, tapHandler: (() -> Void)? = nil) -> DataSourceImageView {
+                     imageColor: UIColor? = nil, tapHandler: ((DataSourceImageView) -> Void)? = nil) -> DataSourceImageView {
 
         let dataSourceImageView = DataSourceImageView()
         dataSourceImageView.configureImageView(image: image, contentMode: contentMode, maxHeight: maxHeight, padding: padding,
@@ -56,7 +57,7 @@ private extension DataSourceImageView {
         }
     }
 
-    func configureGestureRecognizer(tapHandler: @escaping () -> Void) {
+    func configureGestureRecognizer(tapHandler: @escaping (DataSourceImageView) -> Void) {
         self.tapHandler = tapHandler
 
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
@@ -66,6 +67,6 @@ private extension DataSourceImageView {
 
 private extension DataSourceImageView {
     @objc func tapped() {
-        tapHandler?()
+        tapHandler?(self)
     }
 }
