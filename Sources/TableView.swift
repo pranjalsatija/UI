@@ -7,9 +7,39 @@
 //
 
 public class TableView: UITableView {
+    @IBInspectable public var emptyMessage: String?
+
+    private var emptyMessageLabel: UILabel!
     private var refreshIndicator: UIRefreshControl!
     private var onRefreshBlock: ((@escaping () -> Void) -> Void)!
+}
 
+extension TableView {
+    public func showEmptyState() {
+        guard let emptyMessage = emptyMessage else {
+            return
+        }
+
+        emptyMessageLabel?.removeFromSuperview()
+        emptyMessageLabel = UILabel(frame: frame)
+        emptyMessageLabel.backgroundColor = backgroundColor
+        emptyMessageLabel.font = .bodyEmphasized
+        emptyMessageLabel.numberOfLines = 0
+        emptyMessageLabel.text = emptyMessage
+        emptyMessageLabel.textAlignment = .center
+        emptyMessageLabel.textColor = .primaryText
+
+        isHidden = true
+        superview?.addSubview(emptyMessageLabel)
+    }
+
+    public func hideEmptyState() {
+        emptyMessageLabel.removeFromSuperview()
+        isHidden = false
+    }
+}
+
+extension TableView {
     public func onRefresh(_ block: @escaping (@escaping () -> Void) -> Void) {
         onRefreshBlock = block
         refreshIndicator = UIRefreshControl()

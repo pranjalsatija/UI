@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AF026C6C2020E6C8007AA185 /* DataSourceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF026C6B2020E6C8007AA185 /* DataSourceImageView.swift */; };
 		AF6641732022B8C600BF5215 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6641722022B8C600BF5215 /* TableView.swift */; };
+		AF8428762024D5240019D29E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8428752024D5240019D29E /* Fonts.swift */; };
 		AF87E509201D67BC0015CE1C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87E508201D67BC0015CE1C /* DataSource.swift */; };
 		AF95B71F2022C9C7004D9C7E /* UILabel Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF95B71E2022C9C7004D9C7E /* UILabel Extension.swift */; };
 		AF95B7212022CB1B004D9C7E /* UIFont Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF95B7202022CB1B004D9C7E /* UIFont Extension.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		AF026C6B2020E6C8007AA185 /* DataSourceImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceImageView.swift; sourceTree = "<group>"; };
 		AF6641722022B8C600BF5215 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		AF8428752024D5240019D29E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		AF87E508201D67BC0015CE1C /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		AF95B71E2022C9C7004D9C7E /* UILabel Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel Extension.swift"; sourceTree = "<group>"; };
 		AF95B7202022CB1B004D9C7E /* UIFont Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont Extension.swift"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				AFBEB51C201D569E0025D5EF /* Card.swift */,
 				AFBEB516201D569D0025D5EF /* ContainerView.swift */,
 				AF87E507201D67B10015CE1C /* DataSource */,
+				AF8428752024D5240019D29E /* Fonts.swift */,
 				AFBEB517201D569D0025D5EF /* RaisedVisualEffectView.swift */,
 				AFBEB51A201D569E0025D5EF /* RoundButton.swift */,
 				AF6641722022B8C600BF5215 /* TableView.swift */,
@@ -309,6 +312,7 @@
 				AFBEB522201D569E0025D5EF /* UIView+Rounded Corners.swift in Sources */,
 				AF95B71F2022C9C7004D9C7E /* UILabel Extension.swift in Sources */,
 				AFBEB520201D569E0025D5EF /* Button.swift in Sources */,
+				AF8428762024D5240019D29E /* Fonts.swift in Sources */,
 				AFC7AEF0202036A70072566B /* DataSourceButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,7 +26,7 @@ private extension DataSourceButtonView {
         button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         button.backgroundColor = .clear
         button.contentEdgeInsets = UIEdgeInsetsMake(16, 16, 16, 16)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        button.titleLabel?.font = .button
         button.setTitle(text, for: .normal)
         button.setTitleColor(textColor, for: .normal)
         addSubview(button)
